@@ -1,3 +1,6 @@
-<p>
-  bracket works!
-</p>
+<ng-content></ng-content>
+<sf-match-result *ngFor="let round of matches?.seedMatches" [matchResults]="round" [matchType]='matchType' [match]='matches'>
+  <div class="tournament-winner debug">
+    <h2> Tournament Winner: {{ winner?.name }}</h2>
+  </div>
+</sf-match-result>

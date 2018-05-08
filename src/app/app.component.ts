@@ -13,4 +13,6 @@ import { FootballInfo } from './games/football/football-info.interface';
 export class AppComponent {
   soccerMatch: Match<SoccerInfo> = soccerMatch;
   footballMatch: Match<FootballInfo> = footballMatch;
+
+  
 }

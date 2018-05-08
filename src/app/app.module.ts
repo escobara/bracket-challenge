@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FootballComponent } from './games/football/football.component';
 import { SoccerComponent } from './games/soccer/soccer.component';
 import { BracketComponent } from './bracket/bracket.component';
+import { MatchResultComponent } from './match-result/match-result.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { BracketComponent } from './bracket/bracket.component';
     AppComponent,
     FootballComponent,
     SoccerComponent,
-    BracketComponent
+    BracketComponent,
+    MatchResultComponent
   ],
   imports: [
     BrowserModule

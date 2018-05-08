@@ -1,0 +1,14 @@
+<div class='round'>
+  {{winner?.name}}
+  <div [ngSwitch]="matchType">
+    <sf-soccer *ngSwitchCase="'soccer'" [matchInfo]='matchResults?.matchInfo'>
+      <span class="home">{{homeTeam?.name}}</span>
+      <span class="away">{{awayTeam?.name}}</span>
+    </sf-soccer>
+    <sf-football *ngSwitchCase="'football'" [matchInfo]='matchResults?.matchInfo'>
+      <span class="home">{{homeTeam?.name}}</span>
+      <span class="away">{{awayTeam?.name}}</span>
+    </sf-football>
+  </div>
+  <ng-content></ng-content>
+</div>

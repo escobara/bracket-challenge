@@ -1,10 +1,10 @@
 <!-- Soccer bracket -->
 <div class="match-container">
-  <sf-bracket></sf-bracket>
+  <sf-bracket [matches]='soccerMatch' matchType='soccer'></sf-bracket>
 </div>
 
 <!-- Football bracket -->
-<div class="match-container">
-  <sf-bracket></sf-bracket>
-</div>
 
+<div class="match-container">
+  <sf-bracket [matches]='footballMatch' matchType='football'></sf-bracket>
+</div>
